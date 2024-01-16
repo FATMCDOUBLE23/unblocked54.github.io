@@ -171,7 +171,7 @@ width: 115px !important;
 background-color: #393939;
 }
 .sg-header-top { 
-height: calc(40% - 5px);
+height: calc(30% - 5px);
 padding: 5px;
 width: 100%;
 background-color: #5AFF00;
@@ -181,7 +181,7 @@ width: 100%;
 background-color: #1A1A1A;
 display: flex;
 flex-diretion: row;
-height: 60%;
+height: 70%;
 }
 .sg-notification.sg-urgent { 
 border-radius: 2px;
