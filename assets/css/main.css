@@ -1,0 +1,686 @@
+*  {
+margin: 0;
+padding: 0;
+font-family: 'monospace';
+}
+.sg-page-content { 
+width: 100%;
+height: 100%;
+background-color: black;
+color: #5AFF00;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+body { 
+width: 100vw;
+overflow-x: hidden;
+height: 100vh;
+}
+.sg-login-box { 
+background-color: transparent;
+border: 3px #393939 solid;
+height: 350px;
+flex-direction: column;
+border-radius: 5px;
+transition: 200ms;
+width: 525px;
+display: flex;
+}
+.sg-login-box:hover { 
+border-radius: 15px;
+border: solid 2px #5AFF00;
+transform: scale(1.05);
+}
+.sg-login-box-top { 
+display: flex;
+width: 100%;
+height: 20%;
+justify-content: center;
+align-items: center;
+}
+.sg-login-box-top span { 
+font-size: 35px;
+font-weight: bolder;
+}
+.sg-login-box-bottom { 
+display: flex;
+width: 100%;
+height: 80%;
+align-items: center;
+flex-direction: column;
+}
+.sg-login-box-bottom input { 
+width: 250px;
+background-color: #393939;
+border: none;
+font-size: 25px;
+height: 50px;
+color: #5AFF00;
+transition: 200ms;
+border-radius: 3px;
+cursor: pointer;
+margin: 10px;
+font-family: 'monospace';
+padding-left: 5px;
+}
+.sg-login-box-bottom button { 
+width: 100px;
+height: 50px;
+background-color: #393939;
+border: none;
+font-size: 25px;
+color: #5AFF00;
+font-weight: bold;
+border-radius: 3px;
+margin: 10px;
+cursor: pointer;
+transition: 200ms;
+}
+.sg-login-box-bottom button:hover { 
+border: 3px #5AFF00 solid;
+border-radius: 10px;
+}
+.sg-login-box-bottom input:focus { 
+outline: none;
+border-bottom: #5AFF00 5px solid;
+}
+.sg-login-box-bottom input::placeholder { 
+color: #5AFF00;
+font-size: 20px;
+}
+.sg-login-box-bottom span { 
+color: red;
+text-align: center;
+margin: 10px;
+}
+
+/*main.html*/
+
+body {
+width: 100vw;
+height: 100vh;
+background-color: black; 
+}
+header { 
+width: 100vw;
+height: 110px;
+z-index: 400;
+flex-direction: column;
+background-color: #21F1F1F;
+position: fixed;
+top: 0;
+border-bottom: #393939 3px solid;
+display: flex;
+} 
+.sg-header-left { 
+width: 50%;
+height: 100%;
+padding-left: 10px;
+justify-content: center;
+display: flex;
+font-weight: bolder;
+flex-direction: column;
+color: #5AFF00;
+font-size: 25px;
+}
+main { 
+color: #5AFF00;
+width: 100%;
+margin-top: 120px;
+}
+.sg-header-right { 
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: right;
+padding-right: 10px;
+}
+.sg-header-right button { 
+width: 300px;
+background-color: #1A1A1A;
+border: 2px solid #393939;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+font-size: 13.5px;
+transition: 200ms;
+margin-left: 10px;
+padding-left: 5px;
+padding-right: 5px;
+color: #5AFF00;
+height: 43px;
+}
+.sg-notification-top-s { 
+display: flex;
+flex-direction: row;
+}
+.sg-btn-window-hidden { 
+width: 275px !important;
+background-color: #5AFF00 !important;
+color: darkgreen !important;
+}
+.sg-btn-window-hidden:hover { 
+border: 3px solid #393939 !important;
+}
+.sg-button-customize { 
+width: 115px !important;
+}
+.sg-header-right button:hover { 
+background-color: #393939;
+}
+.sg-header-top { 
+height: calc(40% - 5px);
+padding: 5px;
+width: 100%;
+background-color: #5AFF00;
+}
+.sg-header-bottom { 
+width: 100%;
+background-color: #1A1A1A;
+display: flex;
+flex-diretion: row;
+height: 60%;
+}
+.sg-notification.sg-urgent { 
+border-radius: 2px;
+color: maroon;
+box-shadow: 0 0 20px 1px black;
+border-top: none;
+border-right: none;
+font-weight: bolder;
+display: flex;
+font-size: 15.5px;
+flex-direction: column;
+padding: 10px;
+width: 390px;
+justify-content: center;
+margin-bottom: 8px;
+background-color: red;
+}
+
+.sg-update { 
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 17px;
+}
+.sg-header-top-buttons { 
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.sg-header-top-buttons a { 
+margin-left: 10px;
+font-weight: bolder;
+transition: 200ms;
+font-size: 15px;
+}
+.sg-header-top-buttons a:hover { 
+color: darkgreen;
+}
+.sg-game-holder { 
+width: 100%;
+height: 100%;
+}
+.sg-game-holder-top a { 
+font-size: 15px;
+}
+.sg-games-tile-holder { 
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+padding: 8px;
+padding-top: 0px !important;
+}
+.sg-game-tile { 
+height: 128px;
+width: 222px;
+border-radius: 5px;
+border: 2px solid #393939;
+transition: 200ms;
+cursor: pointer;
+overflow: hidden;
+margin: 10px;
+display: flex;
+color: white;
+flex-direction: column;
+}
+.sg-game-tile:hover { 
+transform: scale(1.05);
+outline: solid 2px #5AFF00;
+box-shadow: 0 0 10px -1 black;
+}
+.sg-game-tile-image { 
+height: 80%;
+width: 100%;
+overflow: hidden;
+display: flex;
+}
+.sg-game-tile-image img { 
+width: 100%;
+height: 100%;
+}
+.sg-game-tile-name { 
+height: 20%;
+width: 100%;
+background-color: #1A1A1A;
+display: flex;
+}
+.sg-gt-l { 
+width: 75%;
+height: 100%;
+display: flex;
+overflow: hidden;
+padding-left: 5px;
+flex-direction: row;
+align-items: center;
+}
+.sg-gt-r { 
+width: 25%;
+height: 100%;
+display: flex;
+padding-right: 5px;
+justify-content: right;
+align-items: center;
+}
+.sg-game-holder-pp { 
+width: 100vw;
+height: 100vh;
+backdrop-filter: blur(25px);
+position: fixed;
+justify-content: center;
+display: flex;
+transition: 200ms;
+align-items: center;
+top: 0;
+z-index: 800;
+}
+.sg-game-holder-pp-hidden { 
+top: calc(100vh + 10px) !important;
+}
+.sg-game-frame-outer { 
+width: 92%;
+height: 92%;
+box-shadow: 0 0 45px -1px black;
+display: flex;
+border-radius: 15px;
+transition: 200ms;
+background-color: #5AFF00;
+flex-direction: column;
+border: solid 3px #5AFF00;
+overflow: hidden;
+}
+.sg-game-frame-container { 
+height: calc(100% - 60px);
+width: 100%;
+}
+.sg-game-frame { 
+width: 100%;
+height: 100%;
+border: none;
+transition: 200ms;
+}
+.sg-game-frame-outer:hover { 
+transform: scale(1.02);
+}
+.sg-game-frame-header { 
+width: 100%;
+height: 60px;
+background-color: black;
+display: flex;
+}
+.sg-game-frame-l { 
+display: flex;
+align-items: center;
+justify-content: left;
+width: 50%;
+flex-direction: column;
+color: white;
+height: 100%;
+}
+.sg-game-frame-t { 
+height: 55%;
+font-size: 20px;
+width: 100%;
+align-items: end;
+font-weight: bolder;
+padding-left: 20px;
+display: flex;
+}
+.sg-game-frame-b { 
+height: 45%;
+width: 100%;
+color: red;
+align-items: start;
+padding-left: 20px;
+font-size: 15px;
+font-weight: bolder;
+display: flex;
+}
+.sg-game-frame-r { 
+display: flex;
+width: 50%;
+align-items: center;
+padding-right: 15px;
+justify-content: right;
+height: 100%;
+}
+.sg-game-frame-r button { 
+width: 300px;
+border: none;
+background-color: #1A1A1A;
+border: 2px solid #393939;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+font-size: 14px;
+transition: 200ms;
+margin-left: 10px;
+padding-left: 5px;
+padding-right: 5px;
+color: #5AFF00;
+height: 40px;
+}
+.sg-notification-holder { 
+top: 113px;
+right: 10px;
+display: flex;
+padding: 10px;
+transiton: 200ms;
+cursor: pointer;
+flex-direction: column;
+transition: 200ms;
+position: fixed;
+background-color: transparent;
+width: 425px;
+padding-bottom: 15px;
+}
+.sg-notification-holder:hover > .sg-notification-holder-int > .sg-notification.sg-urgent { 
+box-shadow: none;
+border-radius: 10px;
+}
+.sg-notification-holder-top { 
+width: 100%;
+height: 30px;
+display: none;
+color: white;
+flex-direction: row;
+}
+.sg-notification-holder-top-l { 
+width: 40%;
+font-size: 19px;
+padding-left: 5px;
+height: 100%;
+font-weight: bolder;
+display: flex;
+}
+.sg-notification-holder-top-r { 
+width: 60%;
+padding-right: 5px;
+font-size: 14px;
+display: flex;
+justify-content: right;
+height: 100%;
+}
+.sg-notification-holder-top-r a:hover { 
+color: #5AFF00;
+}
+.sg-notification-holder-top-r a { 
+transition: 200ms;
+text-transform: uppercase;
+font-weight: bolder;
+}
+.sg-notification-holder-int { 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.sg-notification-holder:hover > .sg-notification-holder-top { 
+display: flex !important;
+}
+.sg-notification-holder:hover { 
+background-color: #1A1A1A;
+border: 2px #393939 solid;
+box-shadow: 0 0 20px 1px black;
+top: 120px;
+border-radius: 5px;
+}
+.sg-game-frame-r button:hover { 
+background-color: #393939;
+}
+.sg-game-unhide-int { 
+width: 90vw;
+height: 20px;
+bottom: 8px;
+cursor: pointer;
+font-size: 15px;
+position: fixed;
+display: flex;
+font-weight: bolder;
+justify-content: center;
+box-shadow: 0 0 40px 1px black;
+align-items: center;
+border-radius: 5px;
+background-color: #5AFF00;
+color: black; 
+}
+.sg-hidden { 
+display: none;
+}
+.sg-game-unhide { 
+width: 100vw;
+height: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sg-display-window-holder { 
+width: 100vw;
+height: 100vh;
+backdrop-filter: blur(25px);
+position: fixed;
+justify-content: center;
+display: flex;
+transition: 200ms;
+align-items: center;
+top: 0;
+z-index: 900;
+}
+.sg-display-window-outer { 
+width: 92%;
+height: 92%;
+box-shadow: 0 0 45px -1px black;
+display: flex;
+border-radius: 15px;
+transition: 200ms;
+flex-direction: column;
+background-color: #5AFF00;
+border: solid 3px #5AFF00;
+overflow: hidden;
+}
+.sg-display-window-outer:hover { 
+transform: scale(1.02);
+}
+.sg-display-window-outer-header { 
+width: 100%;
+height: 60px;
+background-color: black;
+display: flex;
+}
+.sg-win-addon { 
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+.sg-display-window-content { 
+width: 100%;
+overflow: scroll;
+height: 100%;
+}
+.sg-edit-tab { 
+background-color: black;
+}
+.sg-notification-message { 
+color: black;
+font-weight: normal;
+}
+.sg-header-left a { 
+font-size: 15px;
+margin: 20px;
+cursor: pointer;
+color: white;
+}
+.sg-header-left a:hover { 
+color: #5AFF00 !important;
+text-decoration: underline;
+}
+.sg-header-left span { 
+margin-right: 25px;
+}
+#lbtn:hover::after { 
+top: 118px;
+position: absolute;
+border-radius: 5px;
+padding: 10px;
+color: maroon;
+right: 5px;
+background-color: red;
+content: 'Accounts are not currently avalible, you can still play free for the entire week!';
+}
+#lbtn { 
+transition: 200ms;
+opacity: 50%;
+}
+#lbtn:hover { 
+opacity: 100%;
+border: none;
+border-radius: 5px;
+}
+.sg-cmp-top .sg-cmp-mid .sg-cmp-bottom {
+display: flex;
+flex-direction: column;
+width: 100vw; 
+}
+.sg-button-play { 
+height: 45px !important;
+width: 135px !important;
+border-radius: 5px !important;
+background-color: #5AFF00 !important;
+border: none !important;
+font-weight: bolder !important;
+font-size: 18px !important;
+color: black !important;
+}
+.sg-button-play:hover { 
+opacity: 80% !important;
+cursor: pointer !important;
+}
+.sg-customize-container { 
+width: 100%;
+background-color: #1A1A1A;
+}
+.sg-customize-top { 
+width: 100%;
+height: 80px;
+background-color: #393939;
+display: flex;
+}
+.sg-selector { 
+height: 90%;
+width: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #1A1A1A;
+cursor: pointer;
+font-weight: bolder;
+color: lime;
+margin-left: 5px;
+margin-right: 5px;
+border-radius: 10px;
+transition: 200ms;
+}
+.sg-selector:hover { 
+background-color: #393939;
+}
+.sg-selected { 
+background-color: #5AFF00 !important;
+color: black !important;
+}
+.sg-customize-content { 
+display: flex;
+width: 100%;
+padding-top: 30px;
+height: 100%;
+flex-direction: column;
+}
+.sg-customize-tab-name { 
+height: 135px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.sg-customize-tab-icon { 
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items:center;
+}
+.sg-cutomize-tab-name-input { 
+width: 400px;
+border-radius: 10px;
+overflow: hidden;
+height: 40px;
+align-items: center;
+display: flex;
+margin-top: 10px;
+}
+.sg-cutomize-tab-name-input button { 
+width: 100%;
+border: none;
+font-weight: bolder;
+font-size: 16px;
+background-color: #5AFF00;
+color: black;
+cursor: pointer;
+}
+.sg-cutomize-tab-name-input button:hover { 
+opacity: 80%;
+}
+.sg-cutomize-tab-name-input input { 
+width: 100%;
+color: white;
+font-size:18px;
+border: none;
+padding-left: 10px;
+background-color: #393939;
+outline: none;
+}
+.sg-icon-selected { 
+border: solid 2px #5AFF00;
+}
+.sg-feature-not-released:hover::after { 
+color: black;
+background-color:#5AFF00;
+padding: 8px;
+content: 'THIS FEATURE IS COMING SOON STAY TUNED!';
+position: absolute;
+left: 5px;
+box-shadow: 0 0 4px -1px black;
+font-size: 15px;
+font-weight: bolder;
+top: 125px;
+border-radius: 8px;
+}
+.sg-feature-not-released { 
+opacity: 55%;
+}
+.sg-feature-not-released:hover { 
+background-color: transparent !important;
+opacity: 100%;
+}
