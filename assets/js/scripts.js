@@ -2,7 +2,7 @@
 	
 	
 	var frame = document.createElement("iframe")
-	frame.src = 'https://sg.ube.lol/h';
+	frame.src = 'https://' + location.hostname + '/h';
 	frame.style.width = '100vw';
 	frame.style.height = '100vh';
 	frame.style.border = 'none';
@@ -10,7 +10,7 @@
 	frame.id = 'ijctfrm';
 	
 	var script = document.createElement("script")
-	script.src = 'https://sg.ube.lol/assets/js/blank-scripts.js';
+	script.src = 'https://' + location.hostname + '/assets/js/blank-scripts.js';
 	
 	var hiddenWindow = window.open("", "")
 	hiddenWindow.document.body.style.margin = '0px';
@@ -141,7 +141,7 @@
 	var gameToLaunchN = gameTile.getAttribute("data-game-normal")
 	console.log("game is " + gameToLaunch)
 	
-	document.getElementById("gfgdpl").src = 'https://sg.ube.lol/' + 'games/' + gameToLaunch;
+	document.getElementById("gfgdpl").src = 'https://' + location.hostname + '/games/' + '/holders/' + gameToLaunch;
 	document.getElementById("gnihtm").innerHTML = 'CLICK TO RESUME ' + gameToLaunchN;
 	document.getElementById("ignhr").innerHTML = gameToLaunchN;
 	
