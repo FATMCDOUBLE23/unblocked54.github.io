@@ -142,7 +142,7 @@
 	var gameToLaunchN = gameTile.getAttribute("data-game-normal")
 	console.log("game is " + gameToLaunch)
 	
-	document.getElementById("gfgdpl").src = 'https://' + location.hostname + '/games' + '/holders/' + gameToLaunch;
+	document.getElementById("gfgdpl").src = 'https://g.ube.lol/games/holders/' + gameToLaunch;
 	document.getElementById("gnihtm").innerHTML = 'CLICK TO RESUME ' + gameToLaunchN;
 	document.getElementById("ignhr").innerHTML = gameToLaunchN;
 	
