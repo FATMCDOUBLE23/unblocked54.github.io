@@ -122,12 +122,13 @@
 	
 	if(m === "jc<3mb") { 
 	
-  document.getElementById("hmwbtn").classList.add("sg-btn-window-hidden")
-  document.getElementById("hmwbtn").innerHTML = '<i class="fa-solid fa-circle-check"></i>&nbsp;WINDOW HIDDEN FROM GOGUARDIAN';
-  document.getElementById("hmwbtn").removeAttribute("onclick")
+  	document.getElementById("hmwbtn").classList.add("sg-btn-window-hidden")
+  	document.getElementById("hmwbtn").innerHTML = '<i class="fa-solid fa-circle-check"></i>&nbsp;WINDOW HIDDEN FROM GOGUARDIAN';
+  	document.getElementById("hmwbtn").removeAttribute("onclick")
 	document.getElementById("ighsts").style.color = 'lime';
 	document.getElementById("ighsts").innerHTML = '<i class="fa-solid fa-circle-check"></i>&nbsp;THIS WINDOW IS HIDDEN FROM GOGUARDIAN';
 	document.getElementById("hmwnthh").style.display = 'none';
+		
 	} else { 
 	
 	console.log("not vaild message")
