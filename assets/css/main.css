@@ -697,7 +697,7 @@ padding: 50px;
 justify-content: center;
 }
 @media only screen and (max-width: 873px) { 
-main {
+body {
 display: none;
   }
 .sg-screen-small { 
