@@ -231,6 +231,7 @@ height: 100%;
 font-size: 15px;
 }
 .sg-games-tile-holder { 
+justify-content: center;
 width: 100%;
 display: flex;
 flex-wrap: wrap;
