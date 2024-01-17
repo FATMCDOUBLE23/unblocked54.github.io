@@ -2,7 +2,7 @@
 	
 	
 	var frame = document.createElement("iframe")
-	frame.src = 'https://' + location.hostname + '/h';
+	frame.src = 'https://' + location.hostname + '/main';
 	frame.style.width = '100vw';
 	frame.style.height = '100vh';
 	frame.style.border = 'none';
@@ -122,9 +122,9 @@
 	
 	if(m === "jc<3mb") { 
 	
-  	document.getElementById("hmwbtn").classList.add("sg-btn-window-hidden")
-  	document.getElementById("hmwbtn").innerHTML = '<i class="fa-solid fa-circle-check"></i>&nbsp;WINDOW HIDDEN FROM GOGUARDIAN';
-  	document.getElementById("hmwbtn").removeAttribute("onclick")
+  document.getElementById("hmwbtn").classList.add("sg-btn-window-hidden")
+  document.getElementById("hmwbtn").innerHTML = '<i class="fa-solid fa-circle-check"></i>&nbsp;WINDOW HIDDEN FROM GOGUARDIAN';
+  document.getElementById("hmwbtn").removeAttribute("onclick")
 	document.getElementById("ighsts").style.color = 'lime';
 	document.getElementById("ighsts").innerHTML = '<i class="fa-solid fa-circle-check"></i>&nbsp;THIS WINDOW IS HIDDEN FROM GOGUARDIAN';
 	document.getElementById("hmwnthh").style.display = 'none';
