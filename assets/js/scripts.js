@@ -1,6 +1,5 @@
 	function hideWindow() {
 	
-	
 	var frame = document.createElement("iframe")
 	frame.src = 'https://' + location.hostname + '/main';
 	frame.style.width = '100vw';
