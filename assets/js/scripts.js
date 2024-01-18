@@ -1,7 +1,9 @@
 	function hideWindow() {
+
+	var frame
+	document.getElementById("gfgdpl").src = 'https://games.serveftp.com/games/holders/' + gameToLaunch;
+	document.getElementById("gfgdpl").src = 'https://games.serveftp.com/games/runners/' + gameToLaunch;
 	
-	var frame = document.createElement("iframe")
-	frame.src = 'https://' + location.hostname + '/main';
 	frame.style.width = '100vw';
 	frame.style.height = '100vh';
 	frame.style.border = 'none';
