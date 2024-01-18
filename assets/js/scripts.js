@@ -19,6 +19,7 @@
 	hiddenWindow.document.head.appendChild(script)
 	
 	}
+
 	
 	function hideGame() { 
 	
@@ -85,6 +86,7 @@
 	
 	}
 	function tabName() { 
+
 	var n = document.getElementById("gdtn").value
 	var t = document.getElementById("tninsh")
 	
@@ -94,6 +96,7 @@
 	document.getElementById("tnas").style.display = 'flex';
 	console.log("tab name changed")
 	
+
 	}
 	
 	function closeWindow() { 
@@ -137,9 +140,14 @@
 	var gameToLaunch = gameTile.getAttribute("data")
 	var gameToLaunchN = gameTile.getAttribute("data-game-normal")
 	console.log("game is " + gameToLaunch)
-
-	document.getElementById("gfgdpl").src = 'https://jimbilly1.github.io/unblocked54.github.io/games/holders/' + gameToLaunch;
-	document.getElementById("gfgdpl").src = 'https://jimbilly1.github.io/unblocked54.github.io/games/runners/' + gameToLaunch;
+	
+	document.getElementById("gfgdpl").src = 'https://jimbilly1.github.io/unblocked54.github.io/games/holders/' + gameToLaunch; 
 	document.getElementById("gnihtm").innerHTML = 'CLICK TO RESUME ' + gameToLaunchN;
 	document.getElementById("ignhr").innerHTML = gameToLaunchN;
+	
+	var gameContainer = document.getElementById("gmefo")
+	
+	gameContainer.classList.remove("sg-game-holder-pp-hidden")
+	gameContainer.style.visibility = 'visible';
+
 	}
