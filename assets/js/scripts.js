@@ -141,7 +141,7 @@
 	var gameToLaunchN = gameTile.getAttribute("data-game-normal")
 	console.log("game is " + gameToLaunch)
 	
-	document.getElementById("gfgdpl").src = 'https://jimbilly1.github.io/unblocked54.github.io/games/holders/' + gameToLaunch; 
+	document.getElementById("gfgdpl").src = 'https://jimbilly1.github.io/unblocked54.github.io/games/runners/' + gameToLaunch; 
 	document.getElementById("gnihtm").innerHTML = 'CLICK TO RESUME ' + gameToLaunchN;
 	document.getElementById("ignhr").innerHTML = gameToLaunchN;
 	
